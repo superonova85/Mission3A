@@ -1,0 +1,11 @@
+Ivan, good job untuk pengerjaan Mission 3A, tetapi masih ada beberapa hal yang perlu direvisi. 
+
+1. Footernya perlu diperbaiki, karena logo terlihat stretch dan tidak proporsional. 
+2. Beberapa teks yang menggunakan uppercase meskipun seharusnya tidak. 
+3. Penempatan elemen dengan absolute juga kurang tepat di beberapa bagian, sehingga perlu disesuaikan agar lebih optimal. 
+4. Responsivitas secara keseluruhan juga perlu lebih diperhatikan agar tampilannya lebih baik di berbagai ukuran layar. 
+
+Tetap semangat untuk memperbaiki detail ini agar hasil akhirnya semakin sempurna! 👍
+
+
+lebar layer target 360px = Samsung galaxy s8+
