@@ -566,7 +566,7 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1536px) {
   .card {
     height: 426px;
     width: 384px;
@@ -637,12 +637,17 @@ video {
 .cardp2 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
+  display: -webkit-box;
   display: none;
   font-family: DM Sans, serif;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 500;
   color: #333333AD;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 @media (min-width: 1024px) {
@@ -757,10 +762,48 @@ video {
 
 @media (min-width: 1024px) {
   .bannerDetail {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    padding-left: 9rem;
-    padding-right: 9rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+.bannerDetailp1 {
+  font-family: Poppins, sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 1024px) {
+  .bannerDetailp1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .bannerDetailp1 {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+}
+
+.bannerDetailp2 {
+  margin-bottom: 0.75rem;
+  font-family: DM Sans, serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 1024px) {
+  .bannerDetailp2 {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -787,6 +830,14 @@ video {
 .navMain:hover {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity, 1));
+}
+
+.navMain::after {
+  height: 3px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 114 182 / var(--tw-bg-opacity, 1));
+  --tw-content: '';
+  content: var(--tw-content);
 }
 
 .fixed {
@@ -1003,10 +1054,6 @@ video {
   line-height: 2rem;
 }
 
-.text-\[14px\] {
-  font-size: 14px;
-}
-
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1020,10 +1067,6 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.font-\[500\] {
-  font-weight: 500;
 }
 
 .font-bold {
@@ -1040,18 +1083,6 @@ video {
 
 .font-semibold {
   font-weight: 600;
-}
-
-.leading-4 {
-  line-height: 1rem;
-}
-
-.leading-7 {
-  line-height: 1.75rem;
-}
-
-.leading-relaxed {
-  line-height: 1.625;
 }
 
 .text-primary {
@@ -1117,17 +1148,12 @@ video {
     padding-right: 7rem;
   }
 
+  .lg\:px-36 {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+
   .lg\:pt-12 {
     padding-top: 3rem;
-  }
-
-  .lg\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .lg\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 }

@@ -1,11 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer components{
-
+@layer components {
   /* card start */
   .card {
-    @apply rounded-xl p-4 bg-white shadow-lg lg:h-[426px] lg:w-[384px] lg:p-5;
+    @apply rounded-xl p-4 bg-white shadow-lg 2xl:h-[426px] 2xl:w-[384px] 2xl:p-5;
   }
   .cardContainer1 {
     @apply flex justify-between lg:block;
@@ -23,7 +22,8 @@
     @apply w-[194px]  font-poppins font-semibold text-base leading-5 lg:w-full lg:text-lg;
   }
   .cardp2 {
-    @apply hidden  lg:block my-3 font-dm font-medium text-secondary text-base ;
+    @apply hidden  lg:block my-3 font-dm font-medium text-secondary text-base line-clamp-2;
+    
   }
   .cardName {
     @apply w-full flex items-end;
@@ -53,7 +53,7 @@
     @apply font-poppins font-semibold text-lg text-button;
   }
   /* card end */
-  
+
   /* banner start */
   .bannerImage {
     @apply bg-cover bg-center rounded-xl relative shadow-xl;
@@ -62,14 +62,24 @@
     @apply bg-black opacity-70  h-[400px] rounded-xl mx-auto;
   }
   .bannerDetail {
-    @apply w-full rounded-xl py-6 px-5 flex text-center items-center flex-col gap-5 absolute top-0   lg:py-16 lg:px-36;
+    @apply w-full rounded-xl py-6 px-5 flex text-center items-center flex-col gap-5 absolute top-0 lg:px-24;
+  }
+  .bannerDetailp1{
+    @apply text-2xl font-bold font-poppins text-primary  lg:text-4xl 2xl:text-7xl;
+  }
+  .bannerDetailp2{
+    @apply text-[14px] font-[500] leading-4 font-dm text-primary mb-3 lg:text-base;
   }
   .bannerbutton {
     @apply h-9 w-[280px]  rounded-lg text-[14px] font-medium font-dm text-sm;
   }
   /* banner end */
-  
+
   .navMain {
     @apply hover:text-red-500 font-dm font-medium text-sm;
+  }
+
+  .navMain::after {
+    @apply content-[''] bg-pink-400 h-[3px];
   }
 }
