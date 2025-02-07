@@ -14,8 +14,9 @@ module.exports = {
         third: "#fef9c3",
         button: "#3ECF4C",
         darkPrimary: "#222325",
+        star: "#ef4444"
       },
     },
   },
-  plugins: [require("@tailwindcss/line-clamp")],
+  plugins: [],
 };
