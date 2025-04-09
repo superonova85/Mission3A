@@ -7,11 +7,11 @@
     @apply bg-yellow-50  w-full  px-5 pb-6 pt-24 shadow-md lg:px-36;
   }
   .mainsection {
-    @apply mx-auto relative lg:pt-12;
+    @apply mx-auto relative lg:pt-12 bg-red-100;
   }
   /* card start */
   .card {
-    @apply rounded-xl p-4 bg-white shadow-lg 2xl:h-[426px] 2xl:w-[384px] 2xl:p-5;
+    @apply rounded-xl p-4 bg-white shadow-lg 2xl:h-[426px] 2xl:w-[384px];
   }
   .cardContainer1 {
     @apply flex justify-between lg:block;

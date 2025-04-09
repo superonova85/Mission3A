@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link href="./output.css" rel="stylesheet" />
+    <!-- Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font DM Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <nav
+        class="z-50 w-full h-[74px] bg-primary flex justify-between items-center px-5 py-4 fixed shadow-md lg:px-28"
+      >
+        <a href="#"
+          ><img class="h-[42px]" src="../img/nav.png" alt="Navbar"
+        /></a>
+      </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main class="main h-full">
+      <section class="sectionLogin gap-3">
+        <h1 class="bannerDetailp1 text-secondary">Pendaftaran Akun</h1>
+        <p class="bannerDetailp2 text-secondary">
+          Yuk, daftarkan akunmu sekarang juga!
+        </p>
+        <form action="#" class="w-full">
+          <label for="namaLengkap"
+            >Nama Lengkap<span class="text-star font-bold"> *</span></label
+          >
+          <br />
+          <input
+            type="text"
+            id="namaLengkap"
+            name="namaLengkap"
+            class="loginInput"
+          />
+          <br />
+          <label for="email"
+            >E-mail<span class="text-star font-bold"> *</span></label
+          >
+          <br />
+          <input type="text" id="email" name="email" class="loginInput" />
+          <br />
+          <!-- no handphone star -->
+          <div>
+            <label for="noHp"
+              >No. Handphone<span class="text-star font-bold"> *</span></label
+            >
+            <br />
+            <div class="flex">
+              <input
+                type="text"
+                id="noHp"
+                name="noHp"
+                class="border rounded-lg w-24 h-10 block mt-1 p-2 mr-4"
+              />
+              <input
+                type="text"
+                id="noHp"
+                name="noHp"
+                class="border rounded-lg w-full h-10 block mt-1 p-2"
+              />
+              <br />
+            </div>
+          </div>
+          <br>
+          <!-- no handphone end -->
+          <label for="Password"
+            >Kata Sandi<span class="text-star font-bold"> *</span></label
+          >
+          <div class="relative">
+            <input
+              type="password"
+              id="Password"
+              name="Password"
+              class="loginInput"
+            />
+            <!-- eye slash icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 512"
+              class="w-4 absolute top-3 right-3"
+            >
+              <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path
+                d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c8.4-19.3 10.6-41.4 4.8-63.3c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zM373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5L373 389.9z"
+              />
+            </svg>
+          </div>
+          <br />
+          <label for="confirmPassword"
+            >Konfirmasi Kata Sandi<span class="text-star font-bold">
+              *</span
+            ></label
+          >
+          <div class="relative">
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              class="loginInput"
+            />
+            <!-- eye slash icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 512"
+              class="w-4 absolute top-3 right-3"
+            >
+              <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path
+                d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c8.4-19.3 10.6-41.4 4.8-63.3c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zM373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5L373 389.9z"
+              />
+            </svg>
+          </div>
+          <br />
+        </form>
+
+        <button class="bannerbutton bg-button text-primary">Daftar</button>
+        <button class="bannerbutton bg-[#E2FCD9CC] text-button">Masuk</button>
+        <div class="flex w-full items-center my-2">
+          <hr class="border-t-1 border-grey-200 w-full" />
+          <p class="font-dm font-normal text-sm text-[#4A505C] px-3">atau</p>
+          <hr class="border-t-1 border-grey-200 w-full" />
+        </div>
+        <button
+          class="bannerbutton bg-primary text-secondary flex items-center justify-center"
+        >
+          <img src="../img/google.png" alt="" class="mr-2" />
+          Masuk dengan Google
+        </button>
+      </section>
+    </main>
+    <!-- main end -->
+  </body>
+</html>
