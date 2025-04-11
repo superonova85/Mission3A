@@ -7,7 +7,7 @@
     @apply bg-yellow-50  w-full  px-5 pb-6 pt-24 shadow-md lg:px-36;
   }
   .mainsection {
-    @apply mx-auto relative lg:pt-12 bg-red-100;
+    @apply mx-auto relative lg:pt-12;
   }
   /* card start */
   .card {
@@ -68,16 +68,16 @@
     @apply bg-black opacity-70  h-[400px] rounded-xl mx-auto;
   }
   .bannerDetail {
-    @apply w-full rounded-xl py-4 px-5 flex text-center items-center flex-col gap-5 absolute top-0 lg:px-24;
+    @apply w-full rounded-xl py-4 px-2 flex text-center items-center flex-col gap-5 absolute top-0  lg:px-24 lg:py-9 bg-yellow-200;
   }
   .bannerDetailp1 {
-    @apply text-2xl font-bold font-poppins  lg:text-4xl 2xl:text-7xl;
+    @apply text-3xl font-bold font-poppins  xl:text-5xl sm:text-4xl md:px-4 ;
   }
   .bannerDetailp2 {
     @apply text-[14px] font-[500] leading-4 font-dm my-3 lg:text-base;
   }
   .bannerbutton {
-    @apply w-full h-9  rounded-lg font-bold font-dm text-sm border hover:shadow-lg;
+    @apply px-5 h-9  rounded-lg font-bold font-dm text-xs lg:text-sm border hover:shadow-lg;
   }
   /* banner end */
 
